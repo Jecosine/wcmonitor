@@ -10,5 +10,5 @@ for i in range(45,405,10):
             sys.stdout.write('  ')
         else:
             sys.stdout.write('\x1b[7m  \x1b[0m')
-        sys.stdout.write('\n')
+    sys.stdout.write('\n')
 
