@@ -1,6 +1,6 @@
 from PIL import Image
 import numpy as np
-
+import sys
 im = Image.open("QR.png",'r').convert('L')
 imdata = np.array(im)
 
