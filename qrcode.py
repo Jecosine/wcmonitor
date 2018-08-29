@@ -2,10 +2,9 @@ from PIL import Image
 import numpy as np
 import sys,os
 import thread
-
+import time
 def printQR():
-    while not (os.path.exists("QR.png"))
-        pass
+    time.sleep(16)    
     im = Image.open("/home/pi/QR.png",'r').convert('L')
     imdata = np.array(im)
     for i in range(45,405,10):
