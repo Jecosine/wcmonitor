@@ -4,7 +4,8 @@ import sys,os
 import thread
 import time
 def printQR():
-    time.sleep(16)    
+    while not os.path.exists("/home/pi/QR.png"):
+        time.sleep(1)
     im = Image.open("/home/pi/QR.png",'r').convert('L')
     imdata = np.array(im)
     for i in range(45,405,10):
